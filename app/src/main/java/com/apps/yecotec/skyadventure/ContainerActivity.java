@@ -20,7 +20,6 @@ public class ContainerActivity extends AppCompatActivity {
     TravellersTabFragment travellersTabFragment;
     LikesTabFragment likesTabFragment;
 
-
     @BindView(R.id.home_tab) ImageView homeTab;
     @BindView(R.id.discover_tab) ImageView discoverTab;
     @BindView(R.id.travellers_tab) ImageView travellersTab;

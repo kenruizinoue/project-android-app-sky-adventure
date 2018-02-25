@@ -11,6 +11,8 @@
     <color name="colorLoginEditTextFill">#CC261136</color>
     <color name="colorLoginEditTextBorder">#4826A0</color>
     <color name="colorDarkPurple">#431C60</color>
+    <color name="colorDarkerPurple">#261136</color>
+
 
     <color name="colorTextGrey">#978F9F</color>
 
@@ -21,6 +23,6 @@
     <color name="colorVividGreen">#8BC34A</color>
     <color name="colorGrey">#9D9D9D</color>
 
-
+    <color name="colorLightBlue">#AAB5E0</color>
 
 </resources>
