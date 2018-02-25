@@ -10,6 +10,7 @@
 
     <color name="colorLoginEditTextFill">#CC261136</color>
     <color name="colorLoginEditTextBorder">#4826A0</color>
+    <color name="colorBottomBar">#431C60</color>
 
     <color name="colorTextGrey">#978F9F</color>
 
