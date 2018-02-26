@@ -3,4 +3,6 @@
 
     <string name="login_string"><u>LOGIN</u></string>
     <string name="sign_up_string"><u>SIGN UP</u></string>
+
+    <string name="plan_resume"><font color='#ffffff'>%1$s </font><font color='#8BC34A'>%2$s</font></string>
 </resources>
