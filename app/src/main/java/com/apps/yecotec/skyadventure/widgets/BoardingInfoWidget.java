@@ -17,7 +17,7 @@ import butterknife.ButterKnife;
  * Created by kenruizinoue on 2/25/18.
  */
 
-public class BoardingInfoWidget extends ConstraintLayout {
+public class BoardingInfoWidget extends CardView {
 
     View rootView;
     @BindView(R.id.widget_holder) CardView widgetHolder;
