@@ -11,7 +11,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="32dp">
+        android:paddingBottom="20dp">
 
         <ImageView
             android:id="@+id/overlay"
@@ -336,6 +336,7 @@
         </com.apps.yecotec.skyadventure.widgets.PlannedTransportationReminderWidget>
 
         <com.apps.yecotec.skyadventure.widgets.ReminderCardWidget
+            android:id="@+id/reminder_card_widget"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -344,6 +345,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/planned_transportation_reminder_widget"/>
+
+        <com.apps.yecotec.skyadventure.widgets.TransportationAlternativesWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reminder_card_widget"/>
 
 
     </android.support.constraint.ConstraintLayout>
