@@ -29,6 +29,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
+    // Recycler View
+    compile 'com.android.support:recyclerview-v7:27.0.2'
+
     // UI
     compile 'com.android.support:cardview-v7:27.0.2'
 

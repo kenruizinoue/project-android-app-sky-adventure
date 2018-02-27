@@ -1,16 +1,13 @@
 package com.apps.yecotec.skyadventure;
 
-import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Window;
 import android.widget.ImageView;
 
 import com.apps.yecotec.skyadventure.fragments.DiscoverTabFragment;
 import com.apps.yecotec.skyadventure.fragments.HomeTabFragment;
 import com.apps.yecotec.skyadventure.fragments.LikesTabFragment;
-import com.apps.yecotec.skyadventure.fragments.TravellersTabFragment;
+import com.apps.yecotec.skyadventure.fragments.TravelersTabFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,7 +17,7 @@ public class ContainerActivity extends AppCompatActivity {
 
     HomeTabFragment homeTabFragment;
     DiscoverTabFragment discoverTabFragment;
-    TravellersTabFragment travellersTabFragment;
+    TravelersTabFragment travellersTabFragment;
     LikesTabFragment likesTabFragment;
 
     @BindView(R.id.home_tab) ImageView homeTab;
@@ -39,7 +36,7 @@ public class ContainerActivity extends AppCompatActivity {
     private void initFragment() {
         homeTabFragment = new HomeTabFragment();
         discoverTabFragment = new DiscoverTabFragment();
-        travellersTabFragment = new TravellersTabFragment();
+        travellersTabFragment = new TravelersTabFragment();
         likesTabFragment = new LikesTabFragment();
 
         // Transaction adds fragment to the specified container
