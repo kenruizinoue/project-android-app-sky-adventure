@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news_card_asset"/>
+
+        <TextView
+            android:id="@+id/card_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="How to find the best photography spots in Brooklyn."
+            android:textSize="20sp"
+            android:textColor="@color/colorSoftBlack2"/>
+
+        <TextView
+            android:id="@+id/card_news_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+            android:textSize="14sp"
+            android:textColor="@color/colorGrey3"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
