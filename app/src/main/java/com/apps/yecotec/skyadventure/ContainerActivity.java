@@ -34,16 +34,6 @@ public class ContainerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_container);
         ButterKnife.bind(this);
         initFragment();
-
-        Rect rectangle = new Rect();
-        Window window = getWindow();
-        window.getDecorView().getWindowVisibleDisplayFrame(rectangle);
-        int statusBarHeight = rectangle.top;
-        int contentViewTop =
-                window.findViewById(Window.ID_ANDROID_CONTENT).getTop();
-        int titleBarHeight= contentViewTop - statusBarHeight;
-
-        Log.d("TAG", "StatusBar Height= " + statusBarHeight + " , TitleBar Height = " + titleBarHeight);
     }
 
     private void initFragment() {
@@ -100,4 +90,5 @@ public class ContainerActivity extends AppCompatActivity {
         travellersTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_travellers_not_selected));
         likesTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_likes_not_selected));
     }
+
 }
