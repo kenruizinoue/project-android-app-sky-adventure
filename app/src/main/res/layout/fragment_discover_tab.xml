@@ -102,6 +102,58 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"/>
 
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.apps.yecotec.skyadventure.widgets.HotelPromotionCardWidget
+                    android:id="@+id/hotel_card_1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <com.apps.yecotec.skyadventure.widgets.HotelPromotionCardWidget
+                    android:id="@+id/hotel_card_2"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.apps.yecotec.skyadventure.widgets.HotelPromotionCardWidget
+                    android:id="@+id/hotel_card_3"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <com.apps.yecotec.skyadventure.widgets.HotelPromotionCardWidget
+                    android:id="@+id/hotel_card_4"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>
