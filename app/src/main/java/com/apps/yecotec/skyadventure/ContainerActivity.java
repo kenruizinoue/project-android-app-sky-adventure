@@ -1,7 +1,10 @@
 package com.apps.yecotec.skyadventure;
 
+import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Window;
 import android.widget.ImageView;
 
 import com.apps.yecotec.skyadventure.fragments.DiscoverTabFragment;
@@ -31,6 +34,16 @@ public class ContainerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_container);
         ButterKnife.bind(this);
         initFragment();
+
+        Rect rectangle = new Rect();
+        Window window = getWindow();
+        window.getDecorView().getWindowVisibleDisplayFrame(rectangle);
+        int statusBarHeight = rectangle.top;
+        int contentViewTop =
+                window.findViewById(Window.ID_ANDROID_CONTENT).getTop();
+        int titleBarHeight= contentViewTop - statusBarHeight;
+
+        Log.d("TAG", "StatusBar Height= " + statusBarHeight + " , TitleBar Height = " + titleBarHeight);
     }
 
     private void initFragment() {
