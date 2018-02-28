@@ -52,12 +52,12 @@
             android:src="@drawable/ic_travellers_not_selected"/>
 
         <ImageView
-            android:id="@+id/likes_tab"
+            android:id="@+id/settings_tab"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:scaleType="center"
-            android:src="@drawable/ic_likes_not_selected"/>
+            android:src="@drawable/ic_settings_not_selected"/>
 
     </LinearLayout>
 

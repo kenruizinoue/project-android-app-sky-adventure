@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import com.apps.yecotec.skyadventure.fragments.DiscoverTabFragment;
 import com.apps.yecotec.skyadventure.fragments.HomeTabFragment;
 import com.apps.yecotec.skyadventure.fragments.LikesTabFragment;
+import com.apps.yecotec.skyadventure.fragments.SettingsTabFragment;
 import com.apps.yecotec.skyadventure.fragments.TravelersTabFragment;
 
 import butterknife.BindView;
@@ -18,12 +19,12 @@ public class ContainerActivity extends AppCompatActivity {
     HomeTabFragment homeTabFragment;
     DiscoverTabFragment discoverTabFragment;
     TravelersTabFragment travellersTabFragment;
-    LikesTabFragment likesTabFragment;
+    SettingsTabFragment settingsTabFragment;
 
     @BindView(R.id.home_tab) ImageView homeTab;
     @BindView(R.id.discover_tab) ImageView discoverTab;
     @BindView(R.id.travellers_tab) ImageView travellersTab;
-    @BindView(R.id.likes_tab) ImageView likesTab;
+    @BindView(R.id.settings_tab) ImageView settingsTab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,14 +38,14 @@ public class ContainerActivity extends AppCompatActivity {
         homeTabFragment = new HomeTabFragment();
         discoverTabFragment = new DiscoverTabFragment();
         travellersTabFragment = new TravelersTabFragment();
-        likesTabFragment = new LikesTabFragment();
+        settingsTabFragment = new SettingsTabFragment();
 
         // Transaction adds fragment to the specified container
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.fragment_container, homeTabFragment)
                 .add(R.id.fragment_container, discoverTabFragment)
                 .add(R.id.fragment_container, travellersTabFragment)
-                .add(R.id.fragment_container, likesTabFragment)
+                .add(R.id.fragment_container, settingsTabFragment)
                 .commit();
         homeTabSelected();
     }
@@ -70,22 +71,22 @@ public class ContainerActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().show(travellersTabFragment).commit();
     }
 
-    @OnClick(R.id.likes_tab)
-    public void likesTabSelected() {
+    @OnClick(R.id.settings_tab)
+    public void settingsTabSelected() {
         setBottomTabsToDefault();
-        likesTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_likes_selected));
-        getSupportFragmentManager().beginTransaction().show(likesTabFragment).commit();
+        settingsTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_settings_selected));
+        getSupportFragmentManager().beginTransaction().show(settingsTabFragment).commit();
     }
 
     public void setBottomTabsToDefault() {
         getSupportFragmentManager().beginTransaction().hide(homeTabFragment).commit();
         getSupportFragmentManager().beginTransaction().hide(discoverTabFragment).commit();
         getSupportFragmentManager().beginTransaction().hide(travellersTabFragment).commit();
-        getSupportFragmentManager().beginTransaction().hide(likesTabFragment).commit();
+        getSupportFragmentManager().beginTransaction().hide(settingsTabFragment).commit();
         homeTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_home_not_selected));
         discoverTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_discover_not_selected));
         travellersTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_travellers_not_selected));
-        likesTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_likes_not_selected));
+        settingsTab.setImageDrawable(getResources().getDrawable(R.drawable.ic_settings_not_selected));
     }
 
 }

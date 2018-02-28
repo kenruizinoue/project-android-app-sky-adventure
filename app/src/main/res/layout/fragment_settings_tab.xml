@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDarkerPurple">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="@drawable/top_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:text="Setings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3"/>
+
+            <TextView
+                android:id="@+id/header_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:text="PERSONAL DETAILS"
+                android:textColor="@color/colorGrey3"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Name"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/header_label"
+                app:layout_constraintTop_toBottomOf="@+id/header_label" />
+
+            <TextView
+                android:id="@+id/name_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sarah Parmenter"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/name_label"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/name_label" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorGrey3"
+                app:layout_constraintTop_toBottomOf="@id/name_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/name_content"/>
+
+            <TextView
+                android:id="@+id/location_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Location"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/name_label"
+                app:layout_constraintTop_toBottomOf="@+id/name_label" />
+
+            <TextView
+                android:id="@+id/location_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London, England"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/location_label"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/location_label" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorGrey3"
+                app:layout_constraintTop_toBottomOf="@id/location_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/location_content"/>
+
+            <TextView
+                android:id="@+id/card_bio_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Card Bio"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/location_label"
+                app:layout_constraintTop_toBottomOf="@+id/location_label" />
+
+            <TextView
+                android:id="@+id/card_bio_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Director of You Know Who, User Interface Designer and Dog Lover."
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/card_bio_label" />
+
+            <View
+                android:id="@+id/card_bio_line"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorGrey3"
+                app:layout_constraintTop_toBottomOf="@id/card_bio_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/card_bio_content"/>
+
+            <TextView
+                android:id="@+id/billing_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="20dp"
+                android:text="BILLING"
+                android:textColor="@color/colorGrey3"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/card_bio_line" />
+
+            <TextView
+                android:id="@+id/credit_card_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Credit Card"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/billing_label"
+                app:layout_constraintTop_toBottomOf="@+id/billing_label" />
+
+            <TextView
+                android:id="@+id/credit_card_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="••• 0980"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/credit_card_label"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/credit_card_line"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorGrey3"
+                app:layout_constraintTop_toBottomOf="@id/credit_card_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/credit_card_content"/>
+
+            <TextView
+                android:id="@+id/connected_accounts_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="20dp"
+                android:text="CONNECTED ACCOUNTS"
+                android:textColor="@color/colorGrey3"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/credit_card_line" />
+
+            <TextView
+                android:id="@+id/facebook_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Facebook"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/connected_accounts_label"
+                app:layout_constraintTop_toBottomOf="@+id/connected_accounts_label" />
+
+            <ImageView
+                android:id="@+id/switch_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/facebook_label"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/facebook_label"
+                app:srcCompat="@drawable/ic_switch_on" />
+
+            <View
+                android:id="@+id/switch_facebook_line"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorGrey3"
+                app:layout_constraintTop_toBottomOf="@id/switch_facebook"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/switch_facebook"/>
+
+            <TextView
+                android:id="@+id/twitter_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Twitter"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/facebook_label"
+                app:layout_constraintTop_toBottomOf="@+id/facebook_label" />
+
+            <ImageView
+                android:id="@+id/switch_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/twitter_label"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/twitter_label"
+                app:srcCompat="@drawable/ic_switch_on" />
+
+            <View
+                android:id="@+id/switch_twitter_line"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorGrey3"
+                app:layout_constraintTop_toBottomOf="@id/switch_twitter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/switch_twitter"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>
