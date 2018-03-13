@@ -1,4 +1,30 @@
-# SkyAdventure
-Demo of plane booking app
+# Sky Adventure
+<img alt="Logo" src="images/app_icon.png" width="80" />
 
-This app was developed to demonstrate my ability to develop and design ui with Android Studio.
+A simple open project of booking app.
+
+This app is a recreation of existing free <a href='https://www.xdguru.com/sky-free-ui-kit-xd/'>adobe xd template</a> designed by <a href='http://youknowwho.com/'>Sarah Parmenter</a>.
+
+The app makes use of fragments, recycler view, card view and butterknife library.
+
+<div style="display:flex;">
+<img alt="App image" src="images/screenshot1.png" width="30%">
+<img alt="App image" src="images/screenshot2.png" width="30%">
+<img alt="App image" src="images/screenshot3.png" width="30%">
+</div>
+
+License
+-------
+    Copyright 2016-present SimpleMobileTools
+    
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    
+       https://www.apache.org/licenses/LICENSE-2.0
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
