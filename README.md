@@ -5,6 +5,11 @@ Description
 ---
 This app is a recreation of existing free <a href='https://www.xdguru.com/sky-free-ui-kit-xd/'>adobe xd template</a> designed by <a href='http://youknowwho.com/'>Sarah Parmenter</a>.
 
+Download
+---
+<a href="https://play.google.com/store/apps/details?id=com.apps.yecotec.skyadventure">
+<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" height="50px"/></a>
+
 Overview
 ---
 - A simple open source project of booking app
