@@ -32,7 +32,7 @@ Screenshots
 <img alt="App image" src="images/screenshot6.png" width="30%">
 </div>
 <div style="display:flex;">
-<img alt="App image" src="images/screenshot7.png" width="30%">
+<img alt="App image" src="images/screenshot7.jpg" width="30%">
 <img alt="App image" src="images/screenshot8.png" width="30%">
 <img alt="App image" src="images/screenshot9.png" width="30%">
 </div>
